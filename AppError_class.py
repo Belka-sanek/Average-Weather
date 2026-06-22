@@ -91,7 +91,8 @@ class AppErrorPng(App):
 
 class AppErrorInternetConnection(App):
     """
-    Класс для создания приложения, в окне которого выводится сообщение об ошибке подключения к интернету.
+    Класс для создания приложения, в окне которого выводится сообщение об ошибке подключения
+    к интернету.
     """
 
     def build(self) -> App:
@@ -107,7 +108,8 @@ class AppErrorInternetConnection(App):
 
 class AppUnknownGeoError(App):
     """
-    Класс для создания приложения, в окне которого выводится сообщение об ошибке подключения к интернету.
+    Класс для создания приложения, в окне которого выводится сообщение об ошибке подключения
+    к интернету.
     """
 
     def build(self) -> App:
@@ -118,4 +120,20 @@ class AppUnknownGeoError(App):
         :return: окно приложения с ошибкой о неудачном подключении к интернету.
         """
         text = 'Unknown geoposition error'
+        return layout_creator(text)
+
+class AppErrorOnSites(App):
+    """
+    Класс для создания приложения, в окне которого выводится сообщение о сторонней ошибке
+    на сайте поиска погоды.
+    """
+
+    def build(self) -> App:
+        """
+        Функция, которая передает:
+        text: str - информацию о классе ошибки
+        в функцию layout_creator
+        :return: окно приложения с ошибкой о неудачном подключении к интернету.
+        """
+        text = 'Error on the weather website'
         return layout_creator(text)

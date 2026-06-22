@@ -10,10 +10,12 @@ The application outputs the average data from different weather stations for the
 
 
 Информация берется с сайтов https://yandex.ru/pogoda и https://world-weather.ru/pogoda
+
 Information is taken from websites https://yandex.ru/pogoda and https://world-weather.ru/pogoda
 
 
 Для компиляции десктоп приложения можно использовать консоль и библиотеку pyinstaller.
+
 To compile a desktop application, you can use the console and the pyinstaller library.
-* pip install pyinstaller
-* pyinstaller --noconsole --add-data ".\\icon_of_weather\\png;icon_of_weather\\png" --icon=.\\icon_of_weather\\logo.ico --name=AverageWeather --onefile main.py
+** pip install pyinstaller
+** pyinstaller --noconsole --add-data ".\\icon_of_weather\\png;icon_of_weather\\png" --icon=.\\icon_of_weather\\logo.ico --name=AverageWeather --onefile main.py

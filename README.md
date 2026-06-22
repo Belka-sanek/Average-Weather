@@ -9,11 +9,9 @@ The application outputs the average data from different weather stations for the
 *Requires an internet connection and permission to access the location.
 
 
-
 Информация берется с сайтов https://yandex.ru/pogoda и https://world-weather.ru/pogoda
 
 Information is taken from websites https://yandex.ru/pogoda and https://world-weather.ru/pogoda
-
 
 
 Для компиляции десктоп приложения можно использовать консоль и библиотеку pyinstaller.

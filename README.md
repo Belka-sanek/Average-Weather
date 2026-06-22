@@ -2,10 +2,13 @@
 
 Программа создана для иностранного заказчика, проживающего в России. 
 Приложение выводит средние данные с разных метеостанций для города по текущему местоположению. 
+
 *Требуется подключение к интернету и разрешение доступа к геопозиции.
+
 
 The program was created for a foreign customer residing in Russia. 
 The application outputs the average data from different weather stations for the city at the current location. 
+
 *Requires an internet connection and permission to access the location.
 
 

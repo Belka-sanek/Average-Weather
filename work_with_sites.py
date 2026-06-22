@@ -18,7 +18,7 @@ def yandex_get_info(geoposition: str) -> dict:
     url_yandex = f"https://yandex.com/pogoda/en/{geoposition}"
 
     response_yandex = requests.get(url_yandex, headers=header)
-    soup_yandex = BS(response_yandex.text, "lxml")
+    soup_yandex = BS(response_yandex.text, "lxml")  # "html.parser")
     data_yandex_day = soup_yandex.find_all("span", class_="AppShortForecastDay_title__2NpIg")
     data_yandex_date = soup_yandex.find_all("span", class_="AppShortForecastDay_subtitle__hv_2V")
     data_yandex_temp = soup_yandex.find_all("span", class_="AppShortForecastDay_temperature__DV3oM")
@@ -60,7 +60,7 @@ def ww_get_info(geoposition: str) -> dict:
     url_ww = f"https://world-weather.ru/pogoda/russia/{geoposition}/month/"
 
     response_ww = requests.get(url_ww, headers=header)
-    soup_ww = BS(response_ww.text, "lxml")
+    soup_ww = BS(response_ww.text, "lxml")  # "html.parser")
     data_ww_day = soup_ww.find_all("a")
     data_ww_dates = [int(data_ww_day[i].get("href")[-2:]) for i in range(19, 29)]
     ww_temp_list_end_week = [[int(soup_ww.find_all("a")[i].find("span").text.replace("°", "")),
